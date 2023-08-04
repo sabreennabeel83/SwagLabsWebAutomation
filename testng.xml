@@ -1,0 +1,61 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite">
+    <parameter name="browser" value="chrome" />
+    <test name="SwagLabs">
+        <classes>
+            <class name="pagesTests.LoginTests">
+               <methods>
+                   <include name="testSuccessfulLogin"/>
+               </methods>
+            </class>
+            <class name="pagesTests.HomePageTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testFilterItems"/>
+                </methods>
+            </class>
+            <class name="pagesTests.SelectedItemPageTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testFilterItems"/>
+                    <include name="testSelectedItems"/>
+                </methods>
+
+            </class>
+            <class name="pagesTests.selectItemFromHomePageTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testFilterItems"/>
+                    <include name="testSelectedItemsFromHomePage"/>
+                </methods>
+            </class>
+            <class name="pagesTests.RemoveItemsFromCartPageTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testFilterItems"/>
+                    <include name="testSelectedItemsFromHomePage"/>
+                    <include name="testRemoveItemFromCartPagAndContinueShopping"/>
+                </methods>
+            </class>
+            <class name="pagesTests.CheckoutYourInformationTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testFilterItems"/>
+                    <include name="testSelectedItemsFromHomePage"/>
+                    <include name="testCheckout"/>
+                </methods>
+            </class>
+            <class name="pagesTests.OverviewTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testFilterItems"/>
+                    <include name="testSelectedItemsFromHomePage"/>
+                    <include name="testCheckout"/>
+                    <include name="testOverviewAndCompleteShopping"/>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+</suite>
