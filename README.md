@@ -2,7 +2,7 @@
 
 This project is a web automation framework built using Selenium and Java, utilizing TestNG for testing purposes. It focuses on automating login functionality, adding products to the shopping cart, removing products from the shopping cart, and confirming the purchase.
 
-##Features
+## Features
 -Automated login functionality for web applications.
 
 
